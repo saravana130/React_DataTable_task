@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import DataTable from './components/DataTable';
-import DataTable_custom from './components/DataTable_custom';
 
 ReactDOM.render(
   <React.StrictMode>
