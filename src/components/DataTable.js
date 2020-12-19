@@ -71,7 +71,7 @@ const DataTable= ()=>{
           setItems(result.data);    
           }  
           GetData();    
-          console.log(items);  
+
     }, []); 
 
 
