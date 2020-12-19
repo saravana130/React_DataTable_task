@@ -1,8 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import React from 'react';
 
-function App() {
-  return (
+
+export default class DataTableaxios extends React.Component {
+  
+ 
+  componentDidMount() {
+    axios.get(`https://5fdb963891f19e00173348b7.mockapi.io/items`)
+      .then(res => {
+        const items = res.data;
+        this.setState({ items });
+      })
+
+      console.log('fetching data');
+  }
+  render (){
+    return(
+  
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +35,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
+    )};
 
-export default App;
+
+}
